@@ -1,0 +1,25 @@
+{
+ "window": "primary",
+ "labels": "strict",
+ "funnel": {
+  "batter_games": 153707,
+  "ge5_tracked": 118320,
+  "ge10_prior": 101661,
+  "ge5_prior": 109822,
+  "w11_dropped": 29174,
+  "rows_after_cutoff": 109694,
+  "eligible_rows": 69920,
+  "batters": 755,
+  "by_season": {
+   "2023": 9038,
+   "2024": 25580,
+   "2025": 25772,
+   "2026": 9530
+  }
+ },
+ "cases_by_family": {
+  "hand_wrist": 1014,
+  "hamstring": 826,
+  "oblique": 674
+ }
+}

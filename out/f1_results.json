@@ -1,0 +1,51 @@
+{
+ "inputs_sha16": {
+  "_staging_tmp/fangraphs_war_2010_2025.csv": "cad855bb7fd170dc",
+  "Postseason_Injury_Risk/data/games_flat.csv": "ad002536e1d8a01b",
+  "Postseason_Injury_Risk/data/standings.csv": "911f807ec5f69104",
+  "IL_Team_Burden/results/team_season.csv": "e201868699ede558"
+ },
+ "n_team_seasons": 300,
+ "n_unmatched_dropped": 0,
+ "n_episodes": 7728,
+ "war_lost": {
+  "mean": 7.551516716675745,
+  "sd_within_season": 3.7396783759233356,
+  "p10": 3.3538131001664815,
+  "p90": 12.41560671464528,
+  "max": 22.93792658820316
+ },
+ "war_lost_zeros": {
+  "mean": 5.537159856991218,
+  "sd_within_season": 2.784459308251836,
+  "p10": 2.4983837121648875,
+  "p90": 9.510189364638435,
+  "max": 19.660953380286088
+ },
+ "war_lost_pace": {
+  "mean": 13.297773775123126,
+  "sd_within_season": 7.700039105611703,
+  "p10": 4.673997727005686,
+  "p90": 22.265677437321397,
+  "max": 46.67217354236999
+ },
+ "yoy_r2": 0.22571609657738445,
+ "yoy_slope": 0.4775681073596602,
+ "yoy_n": 270,
+ "wins_per_war_lost": {
+  "est": -0.5532556643759037,
+  "se": 0.15693471649979304,
+  "lo": -0.8608420566395019,
+  "hi": -0.24566927211230555,
+  "n": 270,
+  "r2": 0.5563610999543606
+ },
+ "wins_one_sd": 2.0689982444236654,
+ "agreement_r_stint_counts_vs_third_party": 0.8573437008784982,
+ "agreement_n": 300,
+ "median_il_days": {
+  "all": 35.0,
+  "shoulder": 45.0,
+  "core_oblique": 30.0
+ }
+}

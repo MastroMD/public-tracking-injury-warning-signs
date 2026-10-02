@@ -1,0 +1,16 @@
+{
+ "window": "primary",
+ "cutoff": "2026-07-12",
+ "gate": {
+  "all": 833,
+  "shoulder": 298,
+  "elbow": 346
+ },
+ "base_rates": {
+  "all": 0.10517752239368353,
+  "shoulder": 0.022265230273862333,
+  "elbow": 0.02610170072105092
+ },
+ "n_outings_panel": 95190,
+ "n_scored": 58387
+}

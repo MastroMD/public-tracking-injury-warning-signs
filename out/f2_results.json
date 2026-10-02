@@ -1,0 +1,346 @@
+{
+ "a_mde": [
+  {
+   "arm": "WS-002 W0 vs workload null, 30 d (pitcher, all-cause)",
+   "dauc": 0.0076091943042868,
+   "ci_lo": 0.0029916414419686,
+   "ci_hi": 0.0123257268187639,
+   "mde_dauc": 0.006667203840568072
+  },
+  {
+   "arm": "WS-002 full ladder vs null, 30 d",
+   "dauc": 0.0091050085943251,
+   "ci_lo": -0.0048992082048543,
+   "ci_hi": 0.0221439694060271,
+   "mde_dauc": 0.019316555436343856
+  },
+  {
+   "arm": "WS-003 W0 vs null, shoulder",
+   "dauc": 0.037871902662606,
+   "ci_lo": 0.0192177093701738,
+   "ci_hi": 0.0569856994780503,
+   "mde_dauc": 0.026977135791340357
+  },
+  {
+   "arm": "WS-003 W0 vs null, elbow",
+   "dauc": -0.0116728488529733,
+   "ci_lo": -0.0338680887076947,
+   "ci_hi": 0.0089656978323197,
+   "mde_dauc": 0.030595561814295996
+  },
+  {
+   "arm": "WS-004 M3 persistence over W0",
+   "dauc": 0.0063895050094885,
+   "ci_lo": 0.0022600823176918,
+   "ci_hi": 0.0101548747133915,
+   "mde_dauc": 0.005639137425499785
+  },
+  {
+   "arm": "WS-007 elbow recurrence over M5",
+   "dauc": 0.0043,
+   "ci_lo": -0.0144,
+   "ci_hi": 0.023,
+   "mde_dauc": 0.026714285714285718
+  },
+  {
+   "arm": "WS-007 shoulder recurrence over M5",
+   "dauc": -0.0011,
+   "ci_lo": -0.0177,
+   "ci_hi": 0.0162,
+   "mde_dauc": 0.024214285714285712
+  },
+  {
+   "arm": "WS-008 composite vs null",
+   "dauc": 0.012,
+   "ci_lo": 0.0064,
+   "ci_hi": 0.0178,
+   "mde_dauc": 0.008142857142857143
+  },
+  {
+   "arm": "WS-008 composite, index ablated",
+   "dauc": 0.0043,
+   "ci_lo": -0.0004,
+   "ci_hi": 0.0091,
+   "mde_dauc": 0.0067857142857142855
+  },
+  {
+   "arm": "WS-009 catcher knee",
+   "dauc": 0.0012,
+   "ci_lo": -0.0144,
+   "ci_hi": 0.0139,
+   "mde_dauc": 0.020214285714285712
+  },
+  {
+   "arm": "WS-009 catcher thumb/hand",
+   "dauc": -0.01,
+   "ci_lo": -0.0234,
+   "ci_hi": 0.0007,
+   "mde_dauc": 0.017214285714285713
+  },
+  {
+   "arm": "WS-009 catcher concussion",
+   "dauc": -0.0006,
+   "ci_lo": -0.024,
+   "ci_hi": 0.0233,
+   "mde_dauc": 0.03378571428571429
+  },
+  {
+   "arm": "WS-010 batter oblique",
+   "dauc": -0.0009,
+   "ci_lo": -0.0131,
+   "ci_hi": 0.0105,
+   "mde_dauc": 0.01685714285714286
+  },
+  {
+   "arm": "WS-010 batter hamstring",
+   "dauc": 0.0059,
+   "ci_lo": -0.0011,
+   "ci_hi": 0.0132,
+   "mde_dauc": 0.010214285714285714
+  },
+  {
+   "arm": "WS-010 batter hand/wrist",
+   "dauc": -0.0042,
+   "ci_lo": -0.0188,
+   "ci_hi": 0.0094,
+   "mde_dauc": 0.020142857142857146
+  }
+ ],
+ "a_mde_or_oblique_per_sd": {
+  "se_log": 0.031307756351993184,
+  "mde_or": 1.0916187843418657
+ },
+ "b_grid": [
+  {
+   "label": "pitcher_all",
+   "r": 5,
+   "e": 0.25,
+   "D": 40.0,
+   "pi": 0.10517752239368353,
+   "ppv_star": 0.5,
+   "lr_star": 8.507734896596647,
+   "auc_star": 0.9496441132795077
+  },
+  {
+   "label": "pitcher_all",
+   "r": 5,
+   "e": 0.5,
+   "D": 40.0,
+   "pi": 0.10517752239368353,
+   "ppv_star": 0.25,
+   "lr_star": 2.835911632198882,
+   "auc_star": 0.6920195454143113
+  },
+  {
+   "label": "pitcher_all",
+   "r": 5,
+   "e": 1.0,
+   "D": 40.0,
+   "pi": 0.10517752239368353,
+   "ppv_star": 0.125,
+   "lr_star": 1.2153906995138066,
+   "auc_star": 0.5321870164206102
+  },
+  {
+   "label": "pitcher_all",
+   "r": 15,
+   "e": 0.25,
+   "D": 40.0,
+   "ppv_star": 1.5,
+   "lr_star": null,
+   "auc_star": null,
+   "note": "unattainable (PPV* \u2265 1)"
+  },
+  {
+   "label": "pitcher_all",
+   "r": 15,
+   "e": 0.5,
+   "D": 40.0,
+   "pi": 0.10517752239368353,
+   "ppv_star": 0.75,
+   "lr_star": 25.52320468978994,
+   "auc_star": NaN
+  },
+  {
+   "label": "pitcher_all",
+   "r": 15,
+   "e": 1.0,
+   "D": 40.0,
+   "pi": 0.10517752239368353,
+   "ppv_star": 0.375,
+   "lr_star": 5.104640937957988,
+   "auc_star": 0.822450210560198
+  },
+  {
+   "label": "pitcher_shoulder",
+   "r": 5,
+   "e": 0.25,
+   "D": 42.0,
+   "pi": 0.022265230273862333,
+   "ppv_star": 0.47619047619047616,
+   "lr_star": 39.92097902097902,
+   "auc_star": NaN
+  },
+  {
+   "label": "pitcher_shoulder",
+   "r": 5,
+   "e": 0.5,
+   "D": 42.0,
+   "pi": 0.022265230273862333,
+   "ppv_star": 0.23809523809523808,
+   "lr_star": 13.72283653846154,
+   "auc_star": NaN
+  },
+  {
+   "label": "pitcher_shoulder",
+   "r": 5,
+   "e": 1.0,
+   "D": 42.0,
+   "pi": 0.022265230273862333,
+   "ppv_star": 0.11904761904761904,
+   "lr_star": 5.934199584199584,
+   "auc_star": 0.858436085106099
+  },
+  {
+   "label": "pitcher_shoulder",
+   "r": 15,
+   "e": 0.25,
+   "D": 42.0,
+   "ppv_star": 1.4285714285714286,
+   "lr_star": null,
+   "auc_star": null,
+   "note": "unattainable (PPV* \u2265 1)"
+  },
+  {
+   "label": "pitcher_shoulder",
+   "r": 15,
+   "e": 0.5,
+   "D": 42.0,
+   "pi": 0.022265230273862333,
+   "ppv_star": 0.7142857142857143,
+   "lr_star": 109.78269230769232,
+   "auc_star": NaN
+  },
+  {
+   "label": "pitcher_shoulder",
+   "r": 15,
+   "e": 1.0,
+   "D": 42.0,
+   "pi": 0.022265230273862333,
+   "ppv_star": 0.35714285714285715,
+   "lr_star": 24.396153846153847,
+   "auc_star": NaN
+  },
+  {
+   "label": "batter_oblique",
+   "r": 5,
+   "e": 0.25,
+   "D": 26.0,
+   "pi": 0.015538254328044414,
+   "ppv_star": 0.7692307692307693,
+   "lr_star": 211.1909795630726,
+   "auc_star": NaN
+  },
+  {
+   "label": "batter_oblique",
+   "r": 5,
+   "e": 0.5,
+   "D": 26.0,
+   "pi": 0.015538254328044414,
+   "ppv_star": 0.38461538461538464,
+   "lr_star": 39.59830866807611,
+   "auc_star": NaN
+  },
+  {
+   "label": "batter_oblique",
+   "r": 5,
+   "e": 1.0,
+   "D": 26.0,
+   "pi": 0.015538254328044414,
+   "ppv_star": 0.19230769230769232,
+   "lr_star": 15.085069968790899,
+   "auc_star": NaN
+  },
+  {
+   "label": "batter_oblique",
+   "r": 15,
+   "e": 0.25,
+   "D": 26.0,
+   "ppv_star": 2.3076923076923075,
+   "lr_star": null,
+   "auc_star": null,
+   "note": "unattainable (PPV* \u2265 1)"
+  },
+  {
+   "label": "batter_oblique",
+   "r": 15,
+   "e": 0.5,
+   "D": 26.0,
+   "ppv_star": 1.1538461538461537,
+   "lr_star": null,
+   "auc_star": null,
+   "note": "unattainable (PPV* \u2265 1)"
+  },
+  {
+   "label": "batter_oblique",
+   "r": 15,
+   "e": 1.0,
+   "D": 26.0,
+   "pi": 0.015538254328044414,
+   "ppv_star": 0.5769230769230769,
+   "lr_star": 86.39630982125693,
+   "auc_star": NaN
+  }
+ ],
+ "b_observed": {
+  "pitcher_all": {
+   "pi": 0.10517752239368353,
+   "auc": 0.5730275224278272,
+   "auc_null": 0.5617138109930133,
+   "auc_ablated": 0.5914127560745525,
+   "auc_null_ablated": 0.5879911988209264,
+   "label": "W0+M3 (P2)",
+   "lr_at_10pct_binormal": 1.5357681850436133,
+   "lr_null_at_10pct_binormal": 1.441401142326263,
+   "ppv_at_10pct": 0.15291160589685393
+  },
+  "pitcher_shoulder": {
+   "pi": 0.022265230273862333,
+   "auc": 0.5759176481380229,
+   "auc_null": 0.548004425952977,
+   "label": "W0 (P3)",
+   "lr_at_10pct_binormal": 1.560595973216805,
+   "lr_null_at_10pct_binormal": 1.3329115716777529,
+   "ppv_at_10pct": 0.03431866998682658
+  },
+  "batter_oblique": {
+   "pi": 0.015538254328044414,
+   "auc": 0.5651648227453893,
+   "auc_null": 0.5641035074481138,
+   "label": "bat-speed deviation (B)",
+   "lr_at_10pct_binormal": 1.4697142040640343,
+   "lr_null_at_10pct_binormal": 1.4609631949444224,
+   "ppv_at_10pct": 0.022671325543966944
+  }
+ },
+ "b_sealed_top10_ppv_lift_pitcher_all": 1.27,
+ "b_any_cell_met": true,
+ "b_cells_met": [
+  {
+   "label": "pitcher_all",
+   "r": 5,
+   "e": 1.0,
+   "D": 40.0,
+   "pi": 0.10517752239368353,
+   "ppv_star": 0.125,
+   "lr_star": 1.2153906995138066,
+   "auc_star": 0.5321870164206102,
+   "met_by_workload_null_alone": true
+  }
+ ],
+ "median_il_days": {
+  "pitcher_all": 40.0,
+  "pitcher_shoulder": 42.0,
+  "batter_oblique": 26.0
+ }
+}

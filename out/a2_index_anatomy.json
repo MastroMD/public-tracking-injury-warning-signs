@@ -1,0 +1,66 @@
+{
+ "note": "A2.5, descriptive; IL start is the effective date and can be backdated",
+ "slow_index": {
+  "n": 468,
+  "n_pitchers": 374,
+  "days_median": 1.0,
+  "days_q1": 1.0,
+  "days_q3": 3.0,
+  "share_le1": 0.6175213675213675,
+  "share_le3": 0.7542735042735043,
+  "share_le7": 0.8867521367521367,
+  "share_le14": 0.9551282051282052,
+  "share_early": 0.6068376068376068,
+  "n_early_known": 468,
+  "by_family": {
+   "other": 216,
+   "elbow": 136,
+   "shoulder": 116
+  }
+ },
+ "not_slow_index": {
+  "n": 1268,
+  "n_pitchers": 693,
+  "days_median": 1.0,
+  "days_q1": 1.0,
+  "days_q3": 6.0,
+  "share_le1": 0.500788643533123,
+  "share_le3": 0.6419558359621451,
+  "share_le7": 0.8343848580441641,
+  "share_le14": 0.9321766561514195,
+  "share_early": 0.6017350157728707,
+  "n_early_known": 1268,
+  "by_family": {
+   "other": 710,
+   "elbow": 308,
+   "shoulder": 250
+  }
+ },
+ "all_index": {
+  "n": 1736,
+  "n_pitchers": 833,
+  "days_median": 1.0,
+  "days_q1": 1.0,
+  "days_q3": 5.0,
+  "share_le1": 0.532258064516129,
+  "share_le3": 0.6722350230414746,
+  "share_le7": 0.8485023041474654,
+  "share_le14": 0.9383640552995391,
+  "share_early": 0.603110599078341,
+  "n_early_known": 1736,
+  "by_family": {
+   "other": 926,
+   "elbow": 444,
+   "shoulder": 366
+  }
+ },
+ "share_slow_among_index": 0.2695852534562212,
+ "comparator_slow_no_placement": {
+  "n": 8393,
+  "share_early": 0.4813535088764447
+ },
+ "comparator_all_no_placement": {
+  "n": 52246,
+  "share_early": 0.4815105462619148
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "prereg_a2": "5a1f00b5420b4e29",
+ "prereg_a1": "d211f7f5dd66d630",
+ "input_sha16": {
+  "2024_command_scores.csv": "d2e26857f2827886",
+  "2024_pbp_info.csv.gz": "7895855837fbc372",
+  "2024_targets.csv.gz": "21a01949e3bb53b0",
+  "2025_command_scores.csv": "b1f37d84a6cbafa4",
+  "2025_pbp_info.csv.gz": "2829800eaf8e30d0",
+  "2025_targets.csv.gz": "b2a26935bbb0798d",
+  "2026_command_scores.csv": "deaec6de7cac388b",
+  "2026_pbp_info.csv.gz": "45ce83615b36962d",
+  "2026_targets.csv.gz": "c5e865fa58c8d6cc"
+ },
+ "ext_join_rate": 0.9488845144356955,
+ "ext_rows": 8805,
+ "ext_pitchers": 506,
+ "ext_gate": {
+  "all": 208,
+  "shoulder": 38
+ },
+ "ext_base_rate": 0.10278250993753549,
+ "type_rows": 7727,
+ "type_gate": 186,
+ "type_share_fb": 0.5374660282127605,
+ "type_share_br": 0.4609809757991459
+}

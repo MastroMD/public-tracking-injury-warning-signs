@@ -1,0 +1,220 @@
+{
+ "note": "A2.6(2) defect check: median IL days from placements starting 2015-01-01 or later",
+ "D_sealed": {
+  "pitcher_all": 40.0,
+  "pitcher_shoulder": 42.0,
+  "batter_oblique": 26.0
+ },
+ "D_2015_on": {
+  "pitcher_all": 38.0,
+  "pitcher_shoulder": 41.0,
+  "batter_oblique": 26.0
+ },
+ "D_changed": true,
+ "grid": [
+  {
+   "label": "pitcher_all",
+   "r": 5,
+   "e": 0.25,
+   "D": 38.0,
+   "ppv_star": 0.5263157894736842,
+   "lr_star": 9.453038773996273,
+   "auc_star": 0.9792361734692486,
+   "met": false,
+   "met_by_workload_null_alone": null
+  },
+  {
+   "label": "pitcher_all",
+   "r": 5,
+   "e": 0.5,
+   "D": 38.0,
+   "ppv_star": 0.2631578947368421,
+   "lr_star": 3.038476748784516,
+   "auc_star": 0.7065002457691423,
+   "met": false,
+   "met_by_workload_null_alone": null
+  },
+  {
+   "label": "pitcher_all",
+   "r": 5,
+   "e": 1.0,
+   "D": 38.0,
+   "ppv_star": 0.13157894736842105,
+   "lr_star": 1.2890507419085826,
+   "auc_star": 0.5422264341956536,
+   "met": true,
+   "met_by_workload_null_alone": true
+  },
+  {
+   "label": "pitcher_all",
+   "r": 15,
+   "e": 0.25,
+   "D": 38.0,
+   "ppv_star": 1.5789473684210527,
+   "lr_star": null,
+   "auc_star": null
+  },
+  {
+   "label": "pitcher_all",
+   "r": 15,
+   "e": 0.5,
+   "D": 38.0,
+   "ppv_star": 0.7894736842105263,
+   "lr_star": 31.904005862237426,
+   "auc_star": NaN,
+   "met": false,
+   "met_by_workload_null_alone": null
+  },
+  {
+   "label": "pitcher_all",
+   "r": 15,
+   "e": 1.0,
+   "D": 38.0,
+   "ppv_star": 0.39473684210526316,
+   "lr_star": 5.548522758649987,
+   "auc_star": 0.8422444811166774,
+   "met": false,
+   "met_by_workload_null_alone": null
+  },
+  {
+   "label": "pitcher_shoulder",
+   "r": 5,
+   "e": 0.25,
+   "D": 41.0,
+   "ppv_star": 0.4878048780487805,
+   "lr_star": 41.82197802197802,
+   "auc_star": NaN,
+   "met": false,
+   "met_by_workload_null_alone": null
+  },
+  {
+   "label": "pitcher_shoulder",
+   "r": 5,
+   "e": 0.5,
+   "D": 41.0,
+   "ppv_star": 0.24390243902439024,
+   "lr_star": 14.165508684863523,
+   "auc_star": NaN,
+   "met": false,
+   "met_by_workload_null_alone": null
+  },
+  {
+   "label": "pitcher_shoulder",
+   "r": 5,
+   "e": 1.0,
+   "D": 41.0,
+   "ppv_star": 0.12195121951219512,
+   "lr_star": 6.099038461538462,
+   "auc_star": 0.8651003760300094,
+   "met": false,
+   "met_by_workload_null_alone": null
+  },
+  {
+   "label": "pitcher_shoulder",
+   "r": 15,
+   "e": 0.25,
+   "D": 41.0,
+   "ppv_star": 1.4634146341463414,
+   "lr_star": null,
+   "auc_star": null
+  },
+  {
+   "label": "pitcher_shoulder",
+   "r": 15,
+   "e": 0.5,
+   "D": 41.0,
+   "ppv_star": 0.7317073170731707,
+   "lr_star": 119.76293706293706,
+   "auc_star": NaN,
+   "met": false,
+   "met_by_workload_null_alone": null
+  },
+  {
+   "label": "pitcher_shoulder",
+   "r": 15,
+   "e": 1.0,
+   "D": 41.0,
+   "ppv_star": 0.36585365853658536,
+   "lr_star": 25.3344674556213,
+   "auc_star": NaN,
+   "met": false,
+   "met_by_workload_null_alone": null
+  },
+  {
+   "label": "batter_oblique",
+   "r": 5,
+   "e": 0.25,
+   "D": 26.0,
+   "ppv_star": 0.7692307692307693,
+   "lr_star": 211.1909795630726,
+   "auc_star": NaN,
+   "met": false,
+   "met_by_workload_null_alone": null
+  },
+  {
+   "label": "batter_oblique",
+   "r": 5,
+   "e": 0.5,
+   "D": 26.0,
+   "ppv_star": 0.38461538461538464,
+   "lr_star": 39.59830866807611,
+   "auc_star": NaN,
+   "met": false,
+   "met_by_workload_null_alone": null
+  },
+  {
+   "label": "batter_oblique",
+   "r": 5,
+   "e": 1.0,
+   "D": 26.0,
+   "ppv_star": 0.19230769230769232,
+   "lr_star": 15.085069968790899,
+   "auc_star": NaN,
+   "met": false,
+   "met_by_workload_null_alone": null
+  },
+  {
+   "label": "batter_oblique",
+   "r": 15,
+   "e": 0.25,
+   "D": 26.0,
+   "ppv_star": 2.3076923076923075,
+   "lr_star": null,
+   "auc_star": null
+  },
+  {
+   "label": "batter_oblique",
+   "r": 15,
+   "e": 0.5,
+   "D": 26.0,
+   "ppv_star": 1.1538461538461537,
+   "lr_star": null,
+   "auc_star": null
+  },
+  {
+   "label": "batter_oblique",
+   "r": 15,
+   "e": 1.0,
+   "D": 26.0,
+   "ppv_star": 0.5769230769230769,
+   "lr_star": 86.39630982125693,
+   "auc_star": NaN,
+   "met": false,
+   "met_by_workload_null_alone": null
+  }
+ ],
+ "cells_met": [
+  {
+   "label": "pitcher_all",
+   "r": 5,
+   "e": 1.0,
+   "D": 38.0,
+   "ppv_star": 0.13157894736842105,
+   "lr_star": 1.2890507419085826,
+   "auc_star": 0.5422264341956536,
+   "met": true,
+   "met_by_workload_null_alone": true
+  }
+ ],
+ "n_cells_met": 1
+}

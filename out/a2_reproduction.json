@@ -1,0 +1,100 @@
+{
+ "pitcher_primary_results.csv": {
+  "rows": 9,
+  "cols_checked": [
+   "n",
+   "n_pos",
+   "n_clusters",
+   "n_pos_clusters",
+   "auc_a",
+   "auc_b",
+   "dauc",
+   "ci_lo",
+   "ci_hi",
+   "p",
+   "n_index_removed",
+   "q_bh"
+  ],
+  "n_diffs_at_4dp": 0,
+  "diffs": []
+ },
+ "pitcher_extended_results.csv": {
+  "rows": 9,
+  "cols_checked": [
+   "n",
+   "n_pos",
+   "n_clusters",
+   "n_pos_clusters",
+   "auc_a",
+   "auc_b",
+   "dauc",
+   "ci_lo",
+   "ci_hi",
+   "p",
+   "n_index_removed",
+   "q_bh"
+  ],
+  "n_diffs_at_4dp": 0,
+  "diffs": []
+ },
+ "batter_primary_public_fdisc.csv": {
+  "rows": 6,
+  "cols_checked": [
+   "n",
+   "n_pos",
+   "n_clusters",
+   "n_pos_clusters",
+   "auc_full",
+   "auc_null",
+   "dauc",
+   "ci_lo",
+   "ci_hi",
+   "p",
+   "n_index_rows_removed",
+   "q_bh"
+  ],
+  "n_diffs_at_4dp": 0,
+  "diffs": []
+ },
+ "batter_primary_public_fdesc.csv": {
+  "rows": 6,
+  "cols_checked": [
+   "n_case",
+   "n_case_clusters",
+   "n_ctrl",
+   "n_ctrl_clusters",
+   "diff",
+   "ci_lo",
+   "ci_hi",
+   "p",
+   "q_bh"
+  ],
+  "n_diffs_at_4dp": 0,
+  "diffs": []
+ },
+ "command_results.csv": {
+  "rows": 4,
+  "cols_checked": [
+   "n",
+   "n_pos",
+   "n_clusters",
+   "n_pos_clusters",
+   "auc_a",
+   "auc_b",
+   "dauc",
+   "ci_lo",
+   "ci_hi",
+   "p",
+   "n_index_removed",
+   "q_bh"
+  ],
+  "n_diffs_at_4dp": 0,
+  "diffs": []
+ },
+ "all_equal_at_4dp": true,
+ "software": {
+  "python": "3.13.15",
+  "numpy": "2.5.3",
+  "pandas": "3.0.5"
+ }
+}

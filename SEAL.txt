@@ -1,0 +1,5 @@
+# Seal — sha256[:16] of each preregistration at sealing
+sealed_at_utc: 2026-09-30T17:29:11Z
+1898c1f6e60769bd  PREREGISTRATION_FRAMING_2026-09-30.md
+48619f924703fe98  PREREGISTRATION_PUBLIC_TWIN_2026-09-30.md
+No feature had been computed from the pitch-level data and no model fit when this seal was written.
