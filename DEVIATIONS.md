@@ -65,3 +65,8 @@ Each entry: date, what, why, and whether any feature or model output had been se
 11. **2026-10-02 — A2.4 shoulder sensitivity on the extended window, gate.** As in #7, the gate is read on the
     out-of-fold scored grid: 38 injured pitchers on the full grid, 24 scored. Reported as gate-closed; its estimate is
     in `out/a2_command_ext.csv` and is not interpreted.
+
+12. **2026-10-02 — addendum A1 seal time (clerical; found in review, nothing changed).** `SEAL_A1.txt` records
+    `sealed_at_utc: 2026-10-02T02:48:19Z` (22:48 EDT), while the addendum's own first line says "Written 2026-10-01 22:55
+    EDT". One of the two times is a typing error. The file is not edited, since editing it would change its hash. The seals in
+    this repository are hashes recorded in text files, not third-party timestamps, and the paper says so.

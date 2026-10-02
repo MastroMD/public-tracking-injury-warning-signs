@@ -1,0 +1,20 @@
+# Citation for the OpenCommand data used by twin/command.py (copied from the OpenCommand repository's CITATION.cff,
+# https://github.com/tomdoyo/open-command, read 2026-10-02). The data are not redistributed here.
+cff-version: 1.2.0
+message: "If you use OpenCommand data or methods, please cite it as below."
+title: "OpenCommand: open catcher-target and pitcher-command data for MLB"
+authors:
+  - given-names: Tom
+    family-names: Kim
+version: 1.2.0
+date-released: 2026-08-27
+type: dataset
+url: "https://open-command.com"
+repository-code: "https://github.com/tomdoyo/open-command"
+license: CC-BY-NC-SA-4.0
+keywords:
+  - baseball
+  - pitching command
+  - catcher targets
+  - computer vision
+  - Statcast
