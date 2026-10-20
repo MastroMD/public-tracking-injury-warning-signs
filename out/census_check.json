@@ -1,0 +1,756 @@
+{
+ "note": "Post hoc, 2026-10-19, extended 2026-10-20 (DEVIATIONS #15). No committed value is refit or changed. Records that share a player and an IL start date are records of one stint that the census kept because their transaction text differed (its duplicate rule matches the full text). Outcome labels are built from IL start dates (pitcher.py label_starts, batter.py cases), so a stint counts once in a label however many records it has, and it enters a label if any of its records qualifies: a family's label if any record is coded to that family, and the all-cause label unless every record is a COVID-era blank. Descriptive values include the repeated records. The A2 horizon output (the paper's Table S4) counts an IL start once for each of its records in the row's family (every record, for any IL), and the A2 anatomy output (Table S5) gives every record of a start the family of the start's first record. labels_if_first_record_only counts the panel rows whose label or removal flag would differ if only each stint's first record (by posting date, then transaction id) were kept, and stops_if_first_record_only the batter-seasons whose stop (the first musculoskeletal placement of the season, after which a batter's games are dropped) would move; the stop also takes any record. near_duplicates are stints of one player that start 1 to 3 days apart, with the same club and the same or a blank diagnosis, the later one starting before the earlier one ends: probably one stint posted twice, which the census counts as two; the alternative merges the later stint's records into the earlier stint. thumb_ucl: sites.py codes a thumb UCL injury as a UCL graft (elbow family); the alternative codes those records to the hand. median_il_days repeats the median IL stint of framing_f2.py (all seasons) and of the addendum A2 check (from 2015) from every record, as committed, and under both census alternatives.",
+ "inputs": {
+  "out/placements_public.csv": "e5ed2129cf8218ec",
+  "pitcher_primary_post_features.parquet": "cce849cb20ba36c3",
+  "pitcher_extended_post_features.parquet": "041d703490d0ab2d",
+  "batter_primary_public_features.parquet": "5313fac72b7aebbc",
+  "batter_primary_strict_features.parquet": "5313fac72b7aebbc",
+  "batter_extended_public_features.parquet": "ba56c99035ddc3d2",
+  "batter_extended_strict_features.parquet": "ba56c99035ddc3d2",
+  "out/a2_horizon.json": "8713a34c16c8e0eb",
+  "out/a2_index_anatomy.json": "728194e5d17f7bd4",
+  "out/f2_results.json": "228df37ad2152e06",
+  "out/a2_f2_defect_check.json": "57b1ee8b373c81c4"
+ },
+ "census": {
+  "records": 11604,
+  "stints": 11485,
+  "stints_with_two_or_more_records": 117,
+  "stints_whose_records_carry_different_site_codes": 42,
+  "second_records": 119,
+  "same_il_end_in_every_such_stint": true,
+  "kinds": {
+   "same_dx_later_date": 48,
+   "same_dx_same_date": 10,
+   "different_dx": 59
+  },
+  "stints_with_a_record_without_diagnosis": 44,
+  "covid_era_blank_records_among_them": 22
+ },
+ "index_h30": {
+  "records": 1736,
+  "starts": 1726,
+  "starts_with_two_records": 10,
+  "table_s4": {
+   "all": 1736,
+   "shoulder": 367,
+   "elbow": 443
+  },
+  "table_s5": {
+   "other": 926,
+   "elbow": 444,
+   "shoulder": 366
+  },
+  "shoulder_table_s4_minus_table_s5": 1,
+  "elbow_table_s5_minus_table_s4": 1,
+  "starts_with_two_records_detail": [
+   {
+    "mlbam": 548389,
+    "il_start": "2023-08-17",
+    "sites": [
+     "back",
+     "back"
+    ],
+    "table_s4": {
+     "shoulder": 0,
+     "elbow": 0
+    },
+    "table_s5_family": "other",
+    "table_s5_count": 2
+   },
+   {
+    "mlbam": 592836,
+    "il_start": "2024-06-22",
+    "sites": [
+     "hand_wrist_finger",
+     "hand_wrist_finger"
+    ],
+    "table_s4": {
+     "shoulder": 0,
+     "elbow": 0
+    },
+    "table_s5_family": "other",
+    "table_s5_count": 2
+   },
+   {
+    "mlbam": 607455,
+    "il_start": "2024-09-10",
+    "sites": [
+     "hand_wrist_finger",
+     "unspecified"
+    ],
+    "table_s4": {
+     "shoulder": 0,
+     "elbow": 0
+    },
+    "table_s5_family": "other",
+    "table_s5_count": 2
+   },
+   {
+    "mlbam": 622663,
+    "il_start": "2026-05-30",
+    "sites": [
+     "arm_other",
+     "shoulder"
+    ],
+    "table_s4": {
+     "shoulder": 1,
+     "elbow": 0
+    },
+    "table_s5_family": "other",
+    "table_s5_count": 2
+   },
+   {
+    "mlbam": 624133,
+    "il_start": "2026-07-06",
+    "sites": [
+     "hip_groin",
+     "hip_groin"
+    ],
+    "table_s4": {
+     "shoulder": 0,
+     "elbow": 0
+    },
+    "table_s5_family": "other",
+    "table_s5_count": 2
+   },
+   {
+    "mlbam": 656550,
+    "il_start": "2025-07-27",
+    "sites": [
+     "elbow_other",
+     "unspecified"
+    ],
+    "table_s4": {
+     "shoulder": 0,
+     "elbow": 1
+    },
+    "table_s5_family": "elbow",
+    "table_s5_count": 2
+   },
+   {
+    "mlbam": 660271,
+    "il_start": "2023-09-16",
+    "sites": [
+     "core_oblique",
+     "core_oblique"
+    ],
+    "table_s4": {
+     "shoulder": 0,
+     "elbow": 0
+    },
+    "table_s5_family": "other",
+    "table_s5_count": 2
+   },
+   {
+    "mlbam": 663554,
+    "il_start": "2024-07-03",
+    "sites": [
+     "hamstring_quad",
+     "unspecified"
+    ],
+    "table_s4": {
+     "shoulder": 0,
+     "elbow": 0
+    },
+    "table_s5_family": "other",
+    "table_s5_count": 2
+   },
+   {
+    "mlbam": 669432,
+    "il_start": "2026-04-26",
+    "sites": [
+     "illness_other",
+     "illness_other"
+    ],
+    "table_s4": {
+     "shoulder": 0,
+     "elbow": 0
+    },
+    "table_s5_family": "other",
+    "table_s5_count": 2
+   },
+   {
+    "mlbam": 681810,
+    "il_start": "2022-06-18",
+    "sites": [
+     "elbow_other",
+     "elbow_other"
+    ],
+    "table_s4": {
+     "shoulder": 0,
+     "elbow": 2
+    },
+    "table_s5_family": "elbow",
+    "table_s5_count": 2
+   }
+  ]
+ },
+ "different_site_codes": {
+  "stints": 42,
+  "one_record_without_diagnosis": 38,
+  "unspecified_text": 1,
+  "two_named_site_codes": 3,
+  "two_named_site_codes_detail": [
+   {
+    "mlbam": 543685,
+    "il_start": "2021-07-05",
+    "sites": [
+     "hamstring_quad",
+     "hip_groin"
+    ],
+    "kind": "two_named_site_codes",
+    "dx": [
+     "Left hamstring strain.",
+     "Right hip impingement."
+    ]
+   },
+   {
+    "mlbam": 622663,
+    "il_start": "2026-05-30",
+    "sites": [
+     "arm_other",
+     "shoulder"
+    ],
+    "kind": "two_named_site_codes",
+    "dx": [
+     "Right arm discomfort.",
+     "Right should strain."
+    ]
+   },
+   {
+    "mlbam": 669742,
+    "il_start": "2023-04-06",
+    "sites": [
+     "hand_wrist_finger",
+     "ucl_graft"
+    ],
+    "kind": "two_named_site_codes",
+    "dx": [
+     "Right thumb UCL repair with augmentation surgery.",
+     "Right thumb sprain."
+    ]
+   }
+  ]
+ },
+ "thumb_ucl": {
+  "records_coded_ucl_graft": 9,
+  "in_the_117_stints": 1,
+  "label_or_removal_rows_changed_if_coded_hand": 0
+ },
+ "covid_era_blank_mix": {
+  "stints_pairing_a_covid_era_blank_with_another_record": 12,
+  "of_which_the_blank_is_the_first_record": 8,
+  "of_the_117_stints_whose_records_are_all_covid_era_blanks": 5,
+  "census_stints_whose_records_are_all_covid_era_blanks": 696
+ },
+ "labels_if_first_record_only": {
+  "pitcher_primary.all": {
+   "panel_rows": 58387,
+   "positive_rows": 6141,
+   "label_rows_changed": 2,
+   "removed_rows": 1704,
+   "removed_rows_changed": 1
+  },
+  "pitcher_primary.shoulder": {
+   "panel_rows": 58387,
+   "positive_rows": 1300,
+   "label_rows_changed": 6,
+   "removed_rows": 366,
+   "removed_rows_changed": 2
+  },
+  "pitcher_primary.elbow": {
+   "panel_rows": 58387,
+   "positive_rows": 1524,
+   "label_rows_changed": 0,
+   "removed_rows": 436,
+   "removed_rows_changed": 0
+  },
+  "pitcher_extended.all": {
+   "panel_rows": 60206,
+   "positive_rows": 6366,
+   "label_rows_changed": 2,
+   "removed_rows": 1769,
+   "removed_rows_changed": 1
+  },
+  "pitcher_extended.shoulder": {
+   "panel_rows": 60206,
+   "positive_rows": 1323,
+   "label_rows_changed": 6,
+   "removed_rows": 375,
+   "removed_rows_changed": 2
+  },
+  "pitcher_extended.elbow": {
+   "panel_rows": 60206,
+   "positive_rows": 1614,
+   "label_rows_changed": 0,
+   "removed_rows": 457,
+   "removed_rows_changed": 0
+  },
+  "batter_primary_public.oblique": {
+   "panel_rows": 109694,
+   "positive_rows": 1614,
+   "label_rows_changed": 0,
+   "removed_rows": 96,
+   "removed_rows_changed": 0
+  },
+  "batter_primary_public.hamstring": {
+   "panel_rows": 109694,
+   "positive_rows": 1561,
+   "label_rows_changed": 0,
+   "removed_rows": 92,
+   "removed_rows_changed": 0
+  },
+  "batter_primary_public.hand_wrist": {
+   "panel_rows": 109694,
+   "positive_rows": 1596,
+   "label_rows_changed": 0,
+   "removed_rows": 96,
+   "removed_rows_changed": 0
+  },
+  "batter_primary_strict.oblique": {
+   "panel_rows": 109694,
+   "positive_rows": 1347,
+   "label_rows_changed": 0,
+   "removed_rows": 81,
+   "removed_rows_changed": 0
+  },
+  "batter_primary_strict.hamstring": {
+   "panel_rows": 109694,
+   "positive_rows": 1335,
+   "label_rows_changed": 0,
+   "removed_rows": 77,
+   "removed_rows_changed": 0
+  },
+  "batter_primary_strict.hand_wrist": {
+   "panel_rows": 109694,
+   "positive_rows": 1596,
+   "label_rows_changed": 0,
+   "removed_rows": 96,
+   "removed_rows_changed": 0
+  },
+  "batter_extended_public.oblique": {
+   "panel_rows": 128182,
+   "positive_rows": 1805,
+   "label_rows_changed": 0,
+   "removed_rows": 106,
+   "removed_rows_changed": 0
+  },
+  "batter_extended_public.hamstring": {
+   "panel_rows": 128182,
+   "positive_rows": 1862,
+   "label_rows_changed": 0,
+   "removed_rows": 105,
+   "removed_rows_changed": 0
+  },
+  "batter_extended_public.hand_wrist": {
+   "panel_rows": 128182,
+   "positive_rows": 1958,
+   "label_rows_changed": 0,
+   "removed_rows": 113,
+   "removed_rows_changed": 0
+  },
+  "batter_extended_strict.oblique": {
+   "panel_rows": 128182,
+   "positive_rows": 1486,
+   "label_rows_changed": 0,
+   "removed_rows": 89,
+   "removed_rows_changed": 0
+  },
+  "batter_extended_strict.hamstring": {
+   "panel_rows": 128182,
+   "positive_rows": 1597,
+   "label_rows_changed": 0,
+   "removed_rows": 88,
+   "removed_rows_changed": 0
+  },
+  "batter_extended_strict.hand_wrist": {
+   "panel_rows": 128182,
+   "positive_rows": 1958,
+   "label_rows_changed": 0,
+   "removed_rows": 113,
+   "removed_rows_changed": 0
+  }
+ },
+ "label_or_removal_rows_changed_if_first_record_only": 22,
+ "stops_if_first_record_only": {
+  "batter_primary": {
+   "batter_seasons_with_a_stop": 831,
+   "stops_moved": 2,
+   "detail": [
+    {
+     "mlbam": 621458,
+     "season": 2023,
+     "stop": "2023-06-04",
+     "stop_alt": null
+    },
+    {
+     "mlbam": 681481,
+     "season": 2023,
+     "stop": "2023-04-28",
+     "stop_alt": null
+    }
+   ]
+  },
+  "batter_extended": {
+   "batter_seasons_with_a_stop": 909,
+   "stops_moved": 2,
+   "detail": [
+    {
+     "mlbam": 621458,
+     "season": 2023,
+     "stop": "2023-06-04",
+     "stop_alt": null
+    },
+    {
+     "mlbam": 681481,
+     "season": 2023,
+     "stop": "2023-04-28",
+     "stop_alt": null
+    }
+   ]
+  }
+ },
+ "near_duplicates": {
+  "pairs": 22,
+  "same_il_end": 22,
+  "pairs_with_both_starts_among_the_table_s4_s5_records": 4,
+  "pairs_whose_earlier_stint_has_no_site_code": 3,
+  "labels_if_merged": {
+   "pitcher_primary.all": {
+    "panel_rows": 58387,
+    "positive_rows": 6141,
+    "label_rows_changed": 0,
+    "removed_rows": 1704,
+    "removed_rows_changed": 0
+   },
+   "pitcher_primary.shoulder": {
+    "panel_rows": 58387,
+    "positive_rows": 1300,
+    "label_rows_changed": 0,
+    "removed_rows": 366,
+    "removed_rows_changed": 0
+   },
+   "pitcher_primary.elbow": {
+    "panel_rows": 58387,
+    "positive_rows": 1524,
+    "label_rows_changed": 0,
+    "removed_rows": 436,
+    "removed_rows_changed": 0
+   },
+   "pitcher_extended.all": {
+    "panel_rows": 60206,
+    "positive_rows": 6366,
+    "label_rows_changed": 0,
+    "removed_rows": 1769,
+    "removed_rows_changed": 0
+   },
+   "pitcher_extended.shoulder": {
+    "panel_rows": 60206,
+    "positive_rows": 1323,
+    "label_rows_changed": 0,
+    "removed_rows": 375,
+    "removed_rows_changed": 0
+   },
+   "pitcher_extended.elbow": {
+    "panel_rows": 60206,
+    "positive_rows": 1614,
+    "label_rows_changed": 0,
+    "removed_rows": 457,
+    "removed_rows_changed": 0
+   },
+   "batter_primary_public.oblique": {
+    "panel_rows": 109694,
+    "positive_rows": 1614,
+    "label_rows_changed": 0,
+    "removed_rows": 96,
+    "removed_rows_changed": 0
+   },
+   "batter_primary_public.hamstring": {
+    "panel_rows": 109694,
+    "positive_rows": 1561,
+    "label_rows_changed": 0,
+    "removed_rows": 92,
+    "removed_rows_changed": 0
+   },
+   "batter_primary_public.hand_wrist": {
+    "panel_rows": 109694,
+    "positive_rows": 1596,
+    "label_rows_changed": 0,
+    "removed_rows": 96,
+    "removed_rows_changed": 0
+   },
+   "batter_primary_strict.oblique": {
+    "panel_rows": 109694,
+    "positive_rows": 1347,
+    "label_rows_changed": 0,
+    "removed_rows": 81,
+    "removed_rows_changed": 0
+   },
+   "batter_primary_strict.hamstring": {
+    "panel_rows": 109694,
+    "positive_rows": 1335,
+    "label_rows_changed": 0,
+    "removed_rows": 77,
+    "removed_rows_changed": 0
+   },
+   "batter_primary_strict.hand_wrist": {
+    "panel_rows": 109694,
+    "positive_rows": 1596,
+    "label_rows_changed": 0,
+    "removed_rows": 96,
+    "removed_rows_changed": 0
+   },
+   "batter_extended_public.oblique": {
+    "panel_rows": 128182,
+    "positive_rows": 1805,
+    "label_rows_changed": 0,
+    "removed_rows": 106,
+    "removed_rows_changed": 0
+   },
+   "batter_extended_public.hamstring": {
+    "panel_rows": 128182,
+    "positive_rows": 1862,
+    "label_rows_changed": 0,
+    "removed_rows": 105,
+    "removed_rows_changed": 0
+   },
+   "batter_extended_public.hand_wrist": {
+    "panel_rows": 128182,
+    "positive_rows": 1958,
+    "label_rows_changed": 0,
+    "removed_rows": 113,
+    "removed_rows_changed": 0
+   },
+   "batter_extended_strict.oblique": {
+    "panel_rows": 128182,
+    "positive_rows": 1486,
+    "label_rows_changed": 0,
+    "removed_rows": 89,
+    "removed_rows_changed": 0
+   },
+   "batter_extended_strict.hamstring": {
+    "panel_rows": 128182,
+    "positive_rows": 1597,
+    "label_rows_changed": 0,
+    "removed_rows": 88,
+    "removed_rows_changed": 0
+   },
+   "batter_extended_strict.hand_wrist": {
+    "panel_rows": 128182,
+    "positive_rows": 1958,
+    "label_rows_changed": 0,
+    "removed_rows": 113,
+    "removed_rows_changed": 0
+   }
+  },
+  "stops_if_merged": {
+   "batter_primary": {
+    "batter_seasons_with_a_stop": 831,
+    "stops_moved": 0,
+    "detail": []
+   },
+   "batter_extended": {
+    "batter_seasons_with_a_stop": 909,
+    "stops_moved": 0,
+    "detail": []
+   }
+  },
+  "detail": [
+   {
+    "mlbam": 446334,
+    "il_starts": [
+     "2021-08-21",
+     "2021-08-22"
+    ]
+   },
+   {
+    "mlbam": 456501,
+    "il_starts": [
+     "2018-04-07",
+     "2018-04-10"
+    ]
+   },
+   {
+    "mlbam": 457775,
+    "il_starts": [
+     "2016-07-01",
+     "2016-07-04"
+    ]
+   },
+   {
+    "mlbam": 461858,
+    "il_starts": [
+     "2016-07-02",
+     "2016-07-04"
+    ]
+   },
+   {
+    "mlbam": 501571,
+    "il_starts": [
+     "2021-04-11",
+     "2021-04-13"
+    ]
+   },
+   {
+    "mlbam": 503285,
+    "il_starts": [
+     "2021-04-30",
+     "2021-05-01"
+    ]
+   },
+   {
+    "mlbam": 518626,
+    "il_starts": [
+     "2022-05-23",
+     "2022-05-24"
+    ]
+   },
+   {
+    "mlbam": 542881,
+    "il_starts": [
+     "2023-09-21",
+     "2023-09-24"
+    ]
+   },
+   {
+    "mlbam": 570663,
+    "il_starts": [
+     "2022-05-24",
+     "2022-05-25"
+    ]
+   },
+   {
+    "mlbam": 571506,
+    "il_starts": [
+     "2016-07-03",
+     "2016-07-06"
+    ]
+   },
+   {
+    "mlbam": 571771,
+    "il_starts": [
+     "2025-07-06",
+     "2025-07-07"
+    ]
+   },
+   {
+    "mlbam": 572955,
+    "il_starts": [
+     "2026-05-27",
+     "2026-05-30"
+    ]
+   },
+   {
+    "mlbam": 592390,
+    "il_starts": [
+     "2022-05-21",
+     "2022-05-24"
+    ]
+   },
+   {
+    "mlbam": 621035,
+    "il_starts": [
+     "2022-07-05",
+     "2022-07-06"
+    ]
+   },
+   {
+    "mlbam": 622534,
+    "il_starts": [
+     "2022-06-21",
+     "2022-06-23"
+    ]
+   },
+   {
+    "mlbam": 641755,
+    "il_starts": [
+     "2022-06-09",
+     "2022-06-12"
+    ]
+   },
+   {
+    "mlbam": 663556,
+    "il_starts": [
+     "2025-03-23",
+     "2025-03-24"
+    ]
+   },
+   {
+    "mlbam": 669720,
+    "il_starts": [
+     "2025-05-29",
+     "2025-05-30"
+    ]
+   },
+   {
+    "mlbam": 676879,
+    "il_starts": [
+     "2025-03-24",
+     "2025-03-27"
+    ]
+   },
+   {
+    "mlbam": 678226,
+    "il_starts": [
+     "2025-09-09",
+     "2025-09-12"
+    ]
+   },
+   {
+    "mlbam": 681460,
+    "il_starts": [
+     "2025-07-08",
+     "2025-07-09"
+    ]
+   },
+   {
+    "mlbam": 686823,
+    "il_starts": [
+     "2025-05-20",
+     "2025-05-22"
+    ]
+   }
+  ],
+  "label_or_removal_rows_changed_if_merged": 0
+ },
+ "median_il_days": {
+  "records": {
+   "all_seasons": {
+    "pitcher_all": 40.0,
+    "pitcher_shoulder": 42.0,
+    "batter_oblique": 26.0
+   },
+   "from_2015": {
+    "pitcher_all": 38.0,
+    "pitcher_shoulder": 41.0,
+    "batter_oblique": 26.0
+   }
+  },
+  "first_record_only": {
+   "all_seasons": {
+    "pitcher_all": 40.0,
+    "pitcher_shoulder": 42.0,
+    "batter_oblique": 26.0
+   },
+   "from_2015": {
+    "pitcher_all": 38.0,
+    "pitcher_shoulder": 41.0,
+    "batter_oblique": 26.0
+   }
+  },
+  "near_duplicates_merged": {
+   "all_seasons": {
+    "pitcher_all": 40.0,
+    "pitcher_shoulder": 42.0,
+    "batter_oblique": 26.0
+   },
+   "from_2015": {
+    "pitcher_all": 38.0,
+    "pitcher_shoulder": 41.0,
+    "batter_oblique": 26.0
+   }
+  }
+ }
+}

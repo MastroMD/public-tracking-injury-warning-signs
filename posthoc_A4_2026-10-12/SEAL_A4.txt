@@ -1,0 +1,2 @@
+POSTHOC_ADDENDUM_A4_2026-10-12.md  sha256[:16] f6b63d099d7a5c1a
+sealed 2026-10-12 18:50 EDT, before a4.py first ran (post hoc; written after every preregistered, A1, A2 and A3 result was known)

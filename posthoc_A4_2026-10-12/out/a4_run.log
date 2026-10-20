@@ -1,0 +1,69 @@
+A4 start 2026-10-12 18:53:27.310479 spec f6b63d099d7a5c1a
+A4.1 all all games, every-appearance workload vs paper workload {'auc_a': 0.5715, 'auc_b': 0.5617, 'dauc': 0.0098, 'ci_lo': 0.0027, 'ci_hi': 0.0176, 'p': 0.007} n_pos_cl 742
+A4.1 all all games {'auc_a': 0.5748, 'auc_b': 0.5715, 'dauc': 0.0033, 'ci_lo': -0.0011, 'ci_hi': 0.0077, 'p': 0.143} n_pos_cl 742
+A4.1 all last outing removed {'auc_a': 0.5897, 'auc_b': 0.5925, 'dauc': -0.0028, 'ci_lo': -0.0053, 'ci_hi': -0.0002, 'p': 0.032} n_pos_cl 667
+A4.1 shoulder all games {'auc_a': 0.5772, 'auc_b': 0.5517, 'dauc': 0.0256, 'ci_lo': 0.0125, 'ci_hi': 0.0394, 'p': 0.0005} n_pos_cl 259
+A4.1 shoulder last outing removed {'auc_a': 0.5808, 'auc_b': 0.5776, 'dauc': 0.0031, 'ci_lo': -0.0067, 'ci_hi': 0.0131, 'p': 0.557} n_pos_cl 219
+A4.1 done 43 s
+A4.2 all lead time 7 days {'auc_a': 0.5844, 'auc_b': 0.5814, 'dauc': 0.0031, 'ci_lo': -0.0014, 'ci_hi': 0.0077, 'p': 0.2} n_pos_cl 679
+A4.2 shoulder lead time 7 days {'auc_a': 0.5661, 'auc_b': 0.5662, 'dauc': -0.0002, 'ci_lo': -0.0111, 'ci_hi': 0.0112, 'p': 0.997} n_pos_cl 224
+A4.2 all lead time 14 days {'auc_a': 0.6017, 'auc_b': 0.5981, 'dauc': 0.0036, 'ci_lo': -0.0013, 'ci_hi': 0.0083, 'p': 0.146} n_pos_cl 635
+A4.2 shoulder lead time 14 days {'auc_a': 0.5779, 'auc_b': 0.5831, 'dauc': -0.0052, 'ci_lo': -0.0136, 'ci_hi': 0.0034, 'p': 0.224} n_pos_cl 200
+A4.3 stint >= 30 days all games {'auc_a': 0.6153, 'auc_b': 0.605, 'dauc': 0.0102, 'ci_lo': 0.0009, 'ci_hi': 0.0189, 'p': 0.027} n_pos_cl 521
+A4.3 stint >= 30 days last outing removed {'auc_a': 0.6313, 'auc_b': 0.6276, 'dauc': 0.0038, 'ci_lo': -0.0034, 'ci_hi': 0.011, 'p': 0.317} n_pos_cl 457
+A4.3 structural diagnosis text all games {'auc_a': 0.5903, 'auc_b': 0.5878, 'dauc': 0.0024, 'ci_lo': -0.0045, 'ci_hi': 0.0096, 'p': 0.476} n_pos_cl 419
+A4.3 structural diagnosis text last outing removed {'auc_a': 0.6134, 'auc_b': 0.6152, 'dauc': -0.0018, 'ci_lo': -0.0073, 'ci_hi': 0.0038, 'p': 0.521} n_pos_cl 366
+A4.3 nonspecific diagnosis text all games {'auc_a': 0.5604, 'auc_b': 0.5287, 'dauc': 0.0317, 'ci_lo': 0.0178, 'ci_hi': 0.0452, 'p': 0.0005} n_pos_cl 454
+A4.3 nonspecific diagnosis text last outing removed {'auc_a': 0.5633, 'auc_b': 0.5489, 'dauc': 0.0144, 'ci_lo': 0.0021, 'ci_hi': 0.0269, 'p': 0.019} n_pos_cl 397
+A4.4 OOF seasons 2017-2021 (10-day IL) all games {'auc_a': 0.5814, 'auc_b': 0.5727, 'dauc': 0.0087, 'ci_lo': 0.0008, 'ci_hi': 0.0163, 'p': 0.027}
+A4.4 OOF seasons 2022-2026 (15-day IL) all games {'auc_a': 0.5681, 'auc_b': 0.5533, 'dauc': 0.0149, 'ci_lo': 0.0056, 'ci_hi': 0.0236, 'p': 0.001}
+A4.5 starters all games {'auc_a': 0.5743, 'auc_b': 0.5611, 'dauc': 0.0132, 'ci_lo': 0.0064, 'ci_hi': 0.0203, 'p': 0.001}
+A4.5 relievers all games {'auc_a': 0.5462, 'auc_b': 0.5298, 'dauc': 0.0163, 'ci_lo': 0.0048, 'ci_hi': 0.0274, 'p': 0.007}
+A4.4 OOF seasons 2017-2021 (10-day IL) last outing removed {'auc_a': 0.603, 'auc_b': 0.602, 'dauc': 0.001, 'ci_lo': -0.0056, 'ci_hi': 0.0077, 'p': 0.785}
+A4.4 OOF seasons 2022-2026 (15-day IL) last outing removed {'auc_a': 0.5843, 'auc_b': 0.5775, 'dauc': 0.0068, 'ci_lo': -0.0004, 'ci_hi': 0.0139, 'p': 0.066}
+A4.5 starters last outing removed {'auc_a': 0.5771, 'auc_b': 0.5749, 'dauc': 0.0021, 'ci_lo': -0.0021, 'ci_hi': 0.0064, 'p': 0.308}
+A4.5 relievers last outing removed {'auc_a': 0.5538, 'auc_b': 0.5323, 'dauc': 0.0215, 'ci_lo': 0.0077, 'ci_hi': 0.0346, 'p': 0.003}
+A4.4 OOF seasons 2017-2021 (10-day IL) all games {'auc_a': 0.5775, 'auc_b': 0.5644, 'dauc': 0.0131, 'ci_lo': -0.0057, 'ci_hi': 0.0311, 'p': 0.178}
+A4.4 OOF seasons 2022-2026 (15-day IL) all games {'auc_a': 0.5933, 'auc_b': 0.55, 'dauc': 0.0434, 'ci_lo': 0.0213, 'ci_hi': 0.0658, 'p': 0.0005}
+A4.4 OOF seasons 2017-2021 (10-day IL) last outing removed {'auc_a': 0.5917, 'auc_b': 0.5928, 'dauc': -0.0011, 'ci_lo': -0.0166, 'ci_hi': 0.0159, 'p': 0.875}
+A4.4 OOF seasons 2022-2026 (15-day IL) last outing removed {'auc_a': 0.5861, 'auc_b': 0.5818, 'dauc': 0.0043, 'ci_lo': -0.0107, 'ci_hi': 0.0191, 'p': 0.581}
+A4.6 ('all', 'all games') 0.0121 0.006 0.0181
+A4.6 ('all', 'last outing removed') 0.0054 0.0005 0.0105
+A4.6 ('shoulder', 'all games') 0.0217 0.0066 0.0374
+A4.7 P1 PRE (features through the previous outing) {'dauc': np.float64(-0.0008), 'ci95': array([-0.0038,  0.0023]), 'ci90': array([-0.0033,  0.0018]), 'equivalent_within_0_005': True, 'share_reps_ge_0_005': np.float64(0.0), 'share_reps_le_m0_005': np.float64(0.0025)}
+A4.7 composite, last outing removed {'dauc': np.float64(0.0034), 'ci95': array([-0.0013,  0.0081]), 'ci90': array([-0.0005,  0.0073]), 'equivalent_within_0_005': False, 'share_reps_ge_0_005': np.float64(0.258), 'share_reps_le_m0_005': np.float64(0.0)}
+A4.7 shoulder kinematics, last outing removed {'dauc': np.float64(0.0016), 'ci95': array([-0.0087,  0.0124]), 'ci90': array([-0.0074,  0.0109]), 'equivalent_within_0_005': False, 'share_reps_ge_0_005': np.float64(0.282), 'share_reps_le_m0_005': np.float64(0.1205)}
+A4.9 ('all', 'all games') {'average_precision_gain': (0.0055, 0.0021, 0.0091), 'std_partial_auc_fpr10_gain': (0.0031, -0.0008, 0.0066), 'sensitivity_at_90spec_gain': (0.0026, -0.0089, 0.0136), 'brier_improvement': (0.0001, -0.0, 0.0003)}
+A4.9 ('all', 'last outing removed') {'average_precision_gain': (0.0007, -0.0012, 0.0028), 'std_partial_auc_fpr10_gain': (0.0017, -0.0008, 0.0041), 'sensitivity_at_90spec_gain': (0.006, -0.0034, 0.015), 'brier_improvement': (0.0, -0.0001, 0.0001)}
+A4.9 ('shoulder', 'all games') {'average_precision_gain': (0.004, 0.0022, 0.0067), 'std_partial_auc_fpr10_gain': (0.0138, 0.0069, 0.0215), 'sensitivity_at_90spec_gain': (0.0362, 0.0115, 0.0647), 'brier_improvement': (0.0, 0.0, 0.0)}
+A4.9 ('shoulder', 'last outing removed') {'average_precision_gain': (0.0003, -0.0023, 0.0016), 'std_partial_auc_fpr10_gain': (0.0043, -0.0034, 0.0127), 'sensitivity_at_90spec_gain': (0.0172, -0.0087, 0.0417), 'brier_improvement': (-0.0, -0.0, 0.0)}
+A4.10 ucl_graft all games {'auc_a': 0.5606, 'auc_b': 0.57, 'dauc': -0.0094, 'ci_lo': -0.0606, 'ci_hi': 0.0414, 'p': 0.717} n_pos_cl 35
+A4.10 ucl_graft last outing removed closed 24
+A4.11 all {'n': 1736, 'n_pitchers': 833, 'k0_minus_ref': -0.411, 'lo': -0.484, 'hi': -0.337}
+A4.11 structural {'n': 751, 'n_pitchers': 485, 'k0_minus_ref': -0.288, 'lo': -0.407, 'hi': -0.163}
+A4.11 nonspecific {'n': 743, 'n_pitchers': 502, 'k0_minus_ref': -0.549, 'lo': -0.653, 'hi': -0.44}
+A4.11 txn<=1 {'n': 480, 'n_pitchers': 358, 'k0_minus_ref': -0.663, 'lo': -0.797, 'hi': -0.53}
+A4.11 txn2-3 {'n': 370, 'n_pitchers': 298, 'k0_minus_ref': -0.484, 'lo': -0.634, 'hi': -0.333}
+A4.11 txn4-7 {'n': 545, 'n_pitchers': 392, 'k0_minus_ref': -0.33, 'lo': -0.448, 'hi': -0.214}
+A4.11 txn>7 {'n': 341, 'n_pitchers': 280, 'k0_minus_ref': -0.107, 'lo': -0.299, 'hi': 0.088}
+A4.11 era2017_2021 {'n': 703, 'n_pitchers': 423, 'k0_minus_ref': -0.376, 'lo': -0.482, 'hi': -0.256}
+A4.11 era2022_2026 {'n': 813, 'n_pitchers': 477, 'k0_minus_ref': -0.402, 'lo': -0.52, 'hi': -0.287}
+A4.11 era2015_2016 {'n': 220, 'n_pitchers': 182, 'k0_minus_ref': -0.557, 'lo': -0.742, 'hi': -0.37}
+A4.11 starters {'n': 1002, 'n_pitchers': 426, 'k0_minus_ref': -0.527, 'lo': -0.624, 'hi': -0.424}
+A4.11 relievers {'n': 734, 'n_pitchers': 481, 'k0_minus_ref': -0.253, 'lo': -0.367, 'hi': -0.142}
+A4.8 panel outings 112306 pitchers 2404 pitcher-seasons by primary type {'FF': 6418, 'SI': 2593} scored rows 69787
+A4.8 all all games {'auc_a': 0.5705, 'auc_b': 0.5611, 'dauc': 0.0094, 'ci_lo': 0.0044, 'ci_hi': 0.0146, 'p': 0.001} n_pos_cl 872
+A4.8 all last outing removed {'auc_a': 0.5906, 'auc_b': 0.5885, 'dauc': 0.0021, 'ci_lo': -0.002, 'ci_hi': 0.0065, 'p': 0.327} n_pos_cl 787
+A4.8 shoulder all games {'auc_a': 0.578, 'auc_b': 0.5529, 'dauc': 0.0252, 'ci_lo': 0.0118, 'ci_hi': 0.0391, 'p': 0.001} n_pos_cl 313
+A4.8 shoulder last outing removed {'auc_a': 0.5856, 'auc_b': 0.5834, 'dauc': 0.0022, 'ci_lo': -0.0075, 'ci_hi': 0.0115, 'p': 0.664} n_pos_cl 270
+A4 end 2026-10-12 18:59:09.534207
+A4 amendment 1 start 2026-10-12 18:59:32.899658 spec 742e33fd3ee4c4b2
+A4.3b nonspecific diagnosis text all games {'auc_a': 0.5601, 'auc_b': 0.543, 'dauc': 0.0171, 'ci_lo': 0.0062, 'ci_hi': 0.0272, 'p': 0.005} n_pos_cl 454
+A4.3b nonspecific diagnosis text last outing removed {'auc_a': 0.5585, 'auc_b': 0.5555, 'dauc': 0.003, 'ci_lo': -0.0059, 'ci_hi': 0.0116, 'p': 0.504} n_pos_cl 397
+A4.5b starters (NA comparator) all games {'auc_a': 0.5824, 'auc_b': 0.5756, 'dauc': 0.0068, 'ci_lo': 0.0011, 'ci_hi': 0.013, 'p': 0.021}
+A4.5b relievers (NA comparator) all games {'auc_a': 0.5345, 'auc_b': 0.5304, 'dauc': 0.0041, 'ci_lo': -0.0028, 'ci_hi': 0.0107, 'p': 0.234}
+A4.5b starters (NA comparator) last outing removed {'auc_a': 0.5788, 'auc_b': 0.5798, 'dauc': -0.001, 'ci_lo': -0.0044, 'ci_hi': 0.0025, 'p': 0.576}
+A4.5b relievers (NA comparator) last outing removed {'auc_a': 0.542, 'auc_b': 0.5439, 'dauc': -0.002, 'ci_lo': -0.0066, 'ci_hi': 0.0026, 'p': 0.423}
+A4.6b ('all', 'all games') 0.0031 -0.0015 0.0077
+A4.6b ('all', 'last outing removed') -0.0024 -0.005 0.0002
+A4 amendment 1 end 2026-10-12 19:00:11.418713

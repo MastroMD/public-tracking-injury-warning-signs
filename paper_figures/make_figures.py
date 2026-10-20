@@ -1,8 +1,9 @@
 """Figures 1-4 of the full paper, drawn from paper/figure_data.json (written by export_figure_data.py).
 
-Run where the files are kept:
+Run on the machine that keeps the files, so the PNGs never pass through a file-transfer service:
     python3 make_figures.py            (matplotlib and numpy only)
-Writes figures/Figure1_trajectory_horizon.png ... Figure4_command_trajectory.png, each also as .pdf.
+Writes figures/Figure1_trajectory_horizon.png ... Figure4_command_trajectory.png, each also as .pdf, and
+Figure2_ablation_forest_J, the same Figure 2 with the journal manuscript's legend wording.
 """
 import json
 import pathlib
@@ -55,9 +56,9 @@ def figure1():
     T, K0 = D["fig1"]["trajectory_h30"], D["fig1"]["k0_by_horizon"]
     fig, axes = plt.subplots(1, 3, figsize=(7.4, 2.9), dpi=300, gridspec_kw=dict(width_ratios=[1.3, 1.3, 0.75]))
     panels = [(axes[0], [("pitcher_all", BLUE, "any IL"), ("pitcher_shoulder", ORANGE, "shoulder"), ("pitcher_elbow", AQUA, "elbow")],
-               "A  Pitchers: four-seam velocity", "Outings before the placement"),
-              (axes[1], [("batter_msk", BLUE, "any IL"), ("batter_oblique", ORANGE, "oblique")],
-               "B  Batters: bat speed", "Games before the placement")]
+               "A  Pitchers: four-seam velocity", "Outings before the last outing"),
+              (axes[1], [("batter_msk", BLUE, "musculoskeletal"), ("batter_oblique", ORANGE, "oblique")],
+               "B  Batters: bat speed", "Games before the last game")]
     for ax, series, title, xlab in panels:
         ends = []
         for key, col, short in series:
@@ -97,8 +98,8 @@ def figure1():
 
 
 # ------------------------------------------------------------------ Figure 2
-def figure2():
-    rows = D["fig2"]
+def figure2(term="Public twin", name="Figure2_ablation_forest", drop=(), xlabel="Gain in AUC over the comparator (95% CI)"):
+    rows = [r for r in D["fig2"] if r["label"] not in drop]
     groups = []
     for r in rows:
         if not groups or groups[-1][0] != r["group"]:
@@ -133,16 +134,16 @@ def figure2():
                 fontweight="bold", color=INK)
     ax.set_xlim(-0.065, 0.065)
     ax.set_ylim(min(ypos) - 0.8, heads[0][0] + 0.9)
-    ax.set_xlabel("Gain in AUC over the workload model (95% CI)")
+    ax.set_xlabel(xlabel)
     ax.grid(axis="x", color=GRID, linewidth=0.6); ax.set_axisbelow(True); ax.tick_params(length=0)
     ax.spines["left"].set_visible(False)
-    handles = [Line2D([], [], color=BLUE, marker="o", markersize=4.6, linewidth=1.4, label="Public twin, all games"),
-               Line2D([], [], color=BLUE, marker="o", markersize=4.6, markerfacecolor="white", linewidth=1.4, label="Public twin, last game removed"),
+    handles = [Line2D([], [], color=BLUE, marker="o", markersize=4.6, linewidth=1.4, label=f"{term}, all games"),
+               Line2D([], [], color=BLUE, marker="o", markersize=4.6, markerfacecolor="white", linewidth=1.4, label=f"{term}, last game removed"),
                Line2D([], [], color=ORANGE, marker="s", markersize=4.6, linewidth=1.4, label="Registry, all games"),
                Line2D([], [], color=ORANGE, marker="s", markersize=4.6, markerfacecolor="white", linewidth=1.4, label="Registry, last game removed")]
     ax.legend(handles=handles, loc="lower center", bbox_to_anchor=(0.42, 1.0), ncol=2, frameon=False, fontsize=7.4)
     fig.subplots_adjust(left=0.40, right=0.98, bottom=0.07, top=0.93)
-    save(fig, "Figure2_ablation_forest")
+    save(fig, name)
 
 
 # ------------------------------------------------------------------ Figure 3
@@ -200,7 +201,7 @@ def figure4():
     ax.axhline(0, color=MUTED, linewidth=0.9)
     ax.set_xlim(len(k) - 0.6, -0.4)
     ax.set_xticks(range(0, len(k), 2)); ax.set_xticklabels([str(i) if i else "last" for i in range(0, len(k), 2)])
-    ax.set_xlabel("Outings before the placement")
+    ax.set_xlabel("Outings before the last outing")
     ax.set_ylabel("Miss from target vs own baseline,\nrelative to uninjured outings (SD)", fontsize=8)
     ax.set_title("Command, 2024–2026 (descriptive)")
     style(ax)
@@ -210,3 +211,7 @@ def figure4():
 
 if __name__ == "__main__":
     figure1(); figure2(); figure3(); figure4()
+    # the journal manuscript calls the twin the public reproduction, and closes the catcher knee cell at its gate
+    # Paper J (2026-10-16): 5 rows use a comparator other than the workload model, named in the legend
+    figure2("Public reproduction", "Figure2_ablation_forest_J", drop=("Catcher workload, knee IL",),
+            xlabel="Gain in AUC over the comparator (95% CI)")

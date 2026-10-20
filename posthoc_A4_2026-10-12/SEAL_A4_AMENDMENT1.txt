@@ -1,0 +1,2 @@
+POSTHOC_ADDENDUM_A4_AMENDMENT1_2026-10-12.md  sha256[:16] 742e33fd3ee4c4b2
+sealed 2026-10-12 18:58 EDT, before any amendment-1 analysis ran (post hoc of post hoc)
